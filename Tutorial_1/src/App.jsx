@@ -11,7 +11,7 @@ function App() {
   const [isWaiting, setIsWaiting] = useState(false);
 
   // Setting up an OpenAI API client
-  const client = new OpenAI({ apiKey: "YOUR API KEY KERE",
+  const client = new OpenAI({ apiKey: "YOUR API KEY HERE",
     dangerouslyAllowBrowser: true
   });
 

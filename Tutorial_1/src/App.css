@@ -20,4 +20,12 @@
       }
     }
   }
+  label {
+    font-size:0.9em; 
+    font-weight:600;
+    color:#aaa;
+  }
+  #response {
+    white-space: pre-wrap;
+  }
 }
