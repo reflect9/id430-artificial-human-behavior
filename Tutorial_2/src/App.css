@@ -1,0 +1,156 @@
+#root {
+  width:100vw;
+  margin: 0 auto;
+  padding: 0; margin:0;
+  text-align: center;
+  background-color: #fff;
+  display:flex;
+  justify-content: center;
+}
+
+.App {
+  width:100%;
+  min-height:100vh;
+  max-width:1200px;
+  border-left:1px solid #ccc;
+  border-right:1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  .App-header {
+    flex:0 0 50px;
+    top:0; left:0;
+    width:100%;
+    height:50px; 
+    font-size:24px;
+    background-color: #fff;
+    display:flex;
+    border-bottom:1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    h4 {
+      margin:0; padding:0;
+      font-size:18px;
+    }
+    .apiKey {
+      position:absolute;
+      right:20px;
+      top:14px;
+      bottom:0;
+      margin:auto;
+      font-size:12px;
+      color:#666;
+      label {
+        font-size:15px;
+      }
+    }
+  }
+  .App-body {
+    flex:1 1 auto;
+    width:100%; 
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+    .Dialogues {
+      flex:1 1 auto;
+      border-bottom:1px solid #ccc;
+      .UserDialogue {
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        .UserMessage {
+          flex:0 0 auto;
+          background-color: #eee;
+          color:black;
+          border-radius: 10px;
+          padding: 10px 20px;
+          margin: 10px;
+          box-sizing: border-box;
+          text-align: right;
+          font-size: 16px;
+        }
+      }
+      .BotDialogue {
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        .BotMessage {
+          flex:1 1 auto;
+          width: calc(100% - 70px);
+          background-color: #fff;
+          border-radius: 10px;
+          padding: 10px;
+          margin: 10px;
+          box-sizing: border-box;
+          text-align: left;
+          font-size: 16px;
+          white-space: pre-wrap;
+          table.ReservationForm {
+            margin: 12px 24px;
+            td {
+              font-size:0.9em;
+              background: #eee;
+              padding:4px 8px;
+              min-width:120px;
+            }
+            th {
+              font-size:0.9em;
+              background: #eee;
+              padding:4px 8px;
+              min-width:120px;
+              text-align: right;
+              font-weight: bold;
+              color:#333;
+            }
+            td.isComplete {
+              text-align: center;
+              padding:12px;
+              span { 
+                font-weight:300;
+                color:rgb(255, 0, 0);
+              }
+              button {
+                background-color: blueviolet;
+                color:white;
+
+              }
+            }
+          }
+        }
+      }
+    }
+    .bottomUI {
+      flex:0 0 200px;
+      width:100%;
+      height:200px;
+      font-size: 24px;
+      padding: 20px;
+      box-sizing: border-box;
+      margin: 0;
+      display:flex;
+      flex-direction: row;
+      gap:20px;
+      textarea {
+        flex:1 1 auto;
+        width: calc(100% - 100px);
+        border: 1px solid #eee;
+        background-color: #fff;
+        padding:12px;
+      }
+      button.SendButton {
+        flex:0 0 100px;
+        width:100px;
+        border: 1px solid #000;
+        border-radius: 0;
+        background-color: #fff;
+        color: #333;
+        text-align: center;
+        font-size: 18px;
+        margin:0; padding:0;
+      }
+    }
+  }
+  .
+}
