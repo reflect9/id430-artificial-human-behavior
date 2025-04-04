@@ -1,11 +1,11 @@
 export async function query({ input, handleResponse }) {
-    const asdf="";
+    const apiKey = "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";
     try {
         const res = await fetch('https://api.openai.com/v1/chat/completions', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${asdf}`,
+                'Authorization': `Bearer ${apiKey}`,
             },
             body: JSON.stringify({
                 model: 'gpt-4o-2024-08-06',
