@@ -1,5 +1,5 @@
 export async function query({ input, handleResponse }) {
-    const asdf="";
+    const asdf="API KEY HERE";
     try {
         const res = await fetch('https://api.openai.com/v1/chat/completions', {
             method: 'POST',

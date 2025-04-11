@@ -61,13 +61,20 @@ Target Temperature: ${targetTemperature}
     }
   }, [targetTemperature, temperature] );
 
+  const updateTemperature = () => {
+    // Simulate getting new temperature and humidity values
+    if (status === 'Heating') {
+        setTemperature(prevTemp => prevTemp + 1);
+    } else {
+        setTemperature(prevTemp => prevTemp - 1);
+    }
+  }
+
   useEffect(() => {
     // Simulate an API call to get the current temperature and humidity
     // by calling letLLMThink function
     const interval = setInterval(() => {
-      // Simulate getting new temperature and humidity values
-      setTemperature(prevTemp => prevTemp + Math.floor(Math.random() * 3) - 1);
-      setHumidity(prevHumidity => prevHumidity + Math.floor(Math.random() * 3) - 1);
+      updateTemperature();
       letLLMThink();
     }, 3000);
     return () => clearInterval(interval);
