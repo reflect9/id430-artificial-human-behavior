@@ -18,10 +18,13 @@ function App() {
   return (
     <div className="App">
       <h2>Tutorial 4: Model Comparison</h2>      
+      
       <textarea className="prompt" onChange={(e)=>{
         setPrompt(e.target.value);  // update the state variable "prompt" 
       }}>{prompt}</textarea>
+      
       <button className="submitButton" onClick={()=>{callLLMs();}}>SUBMIT</button>
+      
       <h4>Responses:</h4>
       <div className="responses">
         <div className="response">

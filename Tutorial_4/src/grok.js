@@ -2,7 +2,7 @@ import OpenAI from "openai";
 
 export const grok = async (prompt) => {
     const client = new OpenAI({
-      apiKey: "API KEY HERE",
+      apiKey: "",
       baseURL: "https://api.x.ai/v1",
       dangerouslyAllowBrowser: true 
     });

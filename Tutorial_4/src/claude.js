@@ -9,8 +9,8 @@ export const claude = async (prompt) => {
     const client = new BedrockRuntimeClient({ 
         region: "ap-northeast-2",
         credentials:{
-            accessKeyId: "PUT YOUR KEY HERE",
-            secretAccessKey: "PUt YOUR SECRET KEY HERE"
+            accessKeyId: "",
+            secretAccessKey: ""
         }
     });
 

@@ -2,7 +2,7 @@ import OpenAI from "openai";
 
 export const chatgpt = async (prompt) => {
     const client = new OpenAI({
-        apiKey: "PUT YOUR KEY HERE",
+        apiKey: "",
         dangerouslyAllowBrowser: true
     });
     const completion = await client.chat.completions.create({
